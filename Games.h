@@ -4,6 +4,7 @@ using namespace std;
 
 class Games{
 private:
+  int track;
   Play info[10];
   int max;
   int front;
@@ -18,6 +19,7 @@ private:
 
 public:
   Games(){
+    track=0;
     max=10;
     front=0;
     back=0;
@@ -47,24 +49,81 @@ while(front!=back){
 }
 }
 void Games::Run_GAMES_QUEUE(){
+
+  while(track!=back){
+    cout<<"ITS "<<info[track].getname()<<"'s turn now"<<endl;
    Queue_Coaster();
    Queue_Ice();
    Queue_Wars();
    Queue_Man();
    Queue_Stack_list();
+   track++;
+ }
 }
 void Games::Queue_Coaster(){
+  int num;
+  cout<<"Welcome to the QUEUE Coaster"<<endl;
+ cout<<"enter a number"<<endl;
+ cin>>num;
+ if(num==0){
+   cout<<"correct"<<endl;
+   info[track].setscore(1);
+ }
+ else
+ cout<<"you lose"<<endl;
 
 }
 void Games::Queue_Ice(){
-
+  int num;
+  cout<<"Welcome to the QUEUE ice"<<endl;
+ cout<<"enter a number"<<endl;
+ cin>>num;
+ if(num==0){
+   cout<<"correct"<<endl;
+   info[track].setscore(1);
+ }
+ else
+ cout<<"you lose"<<endl;
 }
 void Games::Queue_Wars(){
+  int num;
+  cout<<"Welcome to the QUEUE Wars"<<endl;
+  cout<<"enter a number"<<endl;
+  cin>>num;
+  if(num==0){
+   cout<<"correct"<<endl;
+   info[track].setscore(1);
+  }
+  else
+  cout<<"you lose"<<endl;
 
-}
+
+  }
 void Games::Queue_Man(){
+  int num;
+  cout<<"Welcome to the QUEUE man"<<endl;
+ cout<<"enter a number"<<endl;
+ cin>>num;
+ if(num==0){
+   cout<<"correct"<<endl;
+   info[track].setscore(1);
+ }
+ else
+ cout<<"you lose"<<endl;
+
 
 }
 void Games::Queue_Stack_list(){
+  int num;
+  cout<<"Welcome to the queue stack list"<<endl;
+ cout<<"enter a number"<<endl;
+ cin>>num;
+ if(num==0){
+   cout<<"correct"<<endl;
+   info[track].setscore(1);
+ }
+ else
+ cout<<"you lose"<<endl;
+
 
 }
