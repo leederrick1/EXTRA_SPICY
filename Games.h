@@ -59,13 +59,14 @@ void Games::Run_GAMES_QUEUE(){
    Queue_Stack_list();
    track++;
  }
+ cout<<"thanks for playing with queues"<<endl;
 }
 void Games::Queue_Coaster(){
   int num;
   cout<<"Welcome to the QUEUE Coaster"<<endl;
  cout<<"enter a number"<<endl;
  cin>>num;
- if(num==0){
+ if(num==1){
    cout<<"correct"<<endl;
    info[track].setscore(1);
  }
@@ -78,7 +79,7 @@ void Games::Queue_Ice(){
   cout<<"Welcome to the QUEUE ice"<<endl;
  cout<<"enter a number"<<endl;
  cin>>num;
- if(num==0){
+ if(num==2){
    cout<<"correct"<<endl;
    info[track].setscore(1);
  }
@@ -90,7 +91,7 @@ void Games::Queue_Wars(){
   cout<<"Welcome to the QUEUE Wars"<<endl;
   cout<<"enter a number"<<endl;
   cin>>num;
-  if(num==0){
+  if(num==3){
    cout<<"correct"<<endl;
    info[track].setscore(1);
   }
@@ -104,7 +105,7 @@ void Games::Queue_Man(){
   cout<<"Welcome to the QUEUE man"<<endl;
  cout<<"enter a number"<<endl;
  cin>>num;
- if(num==0){
+ if(num==4){
    cout<<"correct"<<endl;
    info[track].setscore(1);
  }
@@ -118,7 +119,7 @@ void Games::Queue_Stack_list(){
   cout<<"Welcome to the queue stack list"<<endl;
  cout<<"enter a number"<<endl;
  cin>>num;
- if(num==0){
+ if(num==5){
    cout<<"correct"<<endl;
    info[track].setscore(1);
  }
